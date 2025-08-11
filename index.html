@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Canteen - Bibek Kumar Sah</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1><i class="fas fa-utensils"></i> College Canteen</h1>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HOME PAGE -->
+  <section class="page active" id="home">
+    <div class="hero">
+      <div class="hero-content fade-in">
+        <h2>Welcome to College Canteen</h2>
+        <p>Delicious meals • Affordable prices • Quick service</p>
+        <p class="manager-name">Managed by <strong>Bibek Kumar Sah</strong></p>
+        <div class="hero-buttons">
+          <a href="#menu" class="btn primary">View Menu</a>
+          <a href="#about" class="btn secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Images -->
+    <div class="gallery-section">
+      <h3>Our Canteen</h3>
+      <div class="image-gallery">
+        <div class="gallery-item slide-up">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Modern College Canteen"/>
+          <div class="overlay">
+            <p>Modern Dining Space</p>
+          </div>
+        </div>
+        <div class="gallery-item slide-up">
+          <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Fresh Food Counter"/>
+          <div class="overlay">
+            <p>Fresh Food Counter</p>
+          </div>
+        </div>
+        <div class="gallery-item slide-up">
+          <img src="https://media.istockphoto.com/id/495799500/photo/good-food-and-laughter-go-hand-in-hand.jpg?s=612x612&w=0&k=20&c=b5NzRzCcGfa42duoo99ITIOfK8Z9aHaiomKKNiXxSAg=" alt="Happy Students in Canteen"/>
+          <div class="overlay">
+            <p>Happy Students</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="stats-section">
+      <div class="stat-item">
+        <i class="fas fa-users"></i>
+        <h4>500+</h4>
+        <p>Daily Customers</p>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-clock"></i>
+        <h4>8 AM - 6 PM</h4>
+        <p>Service Hours</p>
+      </div>
+      <div class="stat-item">
+        <i class="fas fa-star"></i>
+        <h4>4.8/5</h4>
+        <p>Student Rating</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT PAGE -->
+  <section class="page" id="about">
+    <div class="container">
+      <h2 class="page-title">About Our Canteen</h2>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <h3>Our Story</h3>
+          <p>Welcome to our college canteen, where we've been serving delicious and nutritious meals to students and staff for over a decade. Under the dedicated management of <strong>Bibek Kumar Sah</strong>, we strive to provide the best dining experience on campus.</p>
+          
+          <h3>Our Mission</h3>
+          <p>To provide fresh, affordable, and delicious meals in a clean and friendly environment that makes every student feel at home.</p>
+        </div>
+        
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Canteen Manager"/>
+        </div>
+      </div>
+
+      <div class="features">
+        <div class="feature zoom-in">
+          <i class="fas fa-leaf"></i>
+          <h3>Fresh Ingredients</h3>
+          <p>We source fresh ingredients daily to ensure the highest quality meals for our students.</p>
+        </div>
+        <div class="feature zoom-in">
+          <i class="fas fa-heart"></i>
+          <h3>Friendly Service</h3>
+          <p>Our staff is trained to provide warm, friendly service that makes you feel welcome.</p>
+        </div>
+        <div class="feature zoom-in">
+          <i class="fas fa-bolt"></i>
+          <h3>Quick Service</h3>
+          <p>Fast preparation and service so you can grab your meal and get to class on time.</p>
+        </div>
+        <div class="feature zoom-in">
+          <i class="fas fa-dollar-sign"></i>
+          <h3>Affordable Prices</h3>
+          <p>Student-friendly prices that won't break your budget while maintaining quality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU PAGE -->
+  <section class="page" id="menu">
+    <div class="container">
+      <h2 class="page-title">Our Menu</h2>
+      
+      <div class="menu-categories">
+        <button class="menu-btn active" data-category="all">All Items</button>
+        <button class="menu-btn" data-category="breakfast">Breakfast</button>
+        <button class="menu-btn" data-category="lunch">Lunch</button>
+        <button class="menu-btn" data-category="snacks">Snacks</button>
+        <button class="menu-btn" data-category="drinks">Drinks</button>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Breakfast Items -->
+        <div class="menu-item breakfast" data-category="breakfast">
+          <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sandwich"/>
+          <div class="menu-info">
+            <h4>Club Sandwich</h4>
+            <p>Fresh bread with vegetables and cheese</p>
+            <span class="price">£3.50</span>
+          </div>
+        </div>
+
+        <div class="menu-item breakfast" data-category="breakfast">
+          <img src="https://images.unsplash.com/photo-1506084868230-bb9d95c24759?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Paratha"/>
+          <div class="menu-info">
+            <h4>Stuffed Paratha</h4>
+            <p>Hot paratha with potato filling</p>
+            <span class="price">£2.50</span>
+          </div>
+        </div>
+
+        <!-- Lunch Items -->
+        <div class="menu-item lunch" data-category="lunch">
+          <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Rice Meal"/>
+          <div class="menu-info">
+            <h4>Dal Rice</h4>
+            <p>Complete meal with dal, rice, and vegetables</p>
+            <span class="price">£5.00</span>
+          </div>
+        </div>
+
+        <div class="menu-item lunch" data-category="lunch">
+          <img src="https://img.freepik.com/premium-psd/delicious-veggie-pizza-freshly-baked-toppings-cheese-mushrooms-peppers-olives_84443-37364.jpg" alt="Veg Pizza"/>
+          <div class="menu-info">
+            <h4>Veg Pizza</h4>
+            <p>Fresh pizza with vegetables and cheese</p>
+            <span class="price">£6.50</span>
+          </div>
+        </div>
+
+        <!-- Snacks -->
+        <div class="menu-item snacks" data-category="snacks">
+          <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Samosa"/>
+          <div class="menu-info">
+            <h4>Samosa (2 pcs)</h4>
+            <p>Crispy samosas with chutney</p>
+            <span class="price">£1.50</span>
+          </div>
+        </div>
+
+        <div class="menu-item snacks" data-category="snacks">
+          <img src="https://images.unsplash.com/photo-1606491956689-2ea866880c84?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Burger"/>
+          <div class="menu-info">
+            <h4>Veg Burger</h4>
+            <p>Delicious burger with fresh vegetables</p>
+            <span class="price">£4.00</span>
+          </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-item drinks" data-category="drinks">
+          <img src="https://images.unsplash.com/photo-1546173159-315724a31696?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Tea"/>
+          <div class="menu-info">
+            <h4>Masala Tea</h4>
+            <p>Hot and refreshing masala tea</p>
+            <span class="price">£1.20</span>
+          </div>
+        </div>
+
+        <div class="menu-item drinks" data-category="drinks">
+          <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Fresh Juice"/>
+          <div class="menu-info">
+            <h4>Fresh Juice</h4>
+            <p>Seasonal fruit juice</p>
+            <span class="price">£2.50</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT PAGE -->
+  <section class="page" id="contact">
+    <div class="container">
+      <h2 class="page-title">Contact Us</h2>
+      
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Location</h4>
+            <p>College Campus, Ground Floor<br>Main Building, Room 101</p>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-phone"></i>
+            <h4>Phone</h4>
+            <p>+91 98765 43210</p>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <p>canteen@college.edu</p>
+          </div>
+          
+          <div class="contact-item">
+            <i class="fas fa-clock"></i>
+            <h4>Hours</h4>
+            <p>Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 8:00 AM - 2:00 PM</p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h3>Send us a Message</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <input type="text" id="name" required>
+              <label for="name">Your Name</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="email" required>
+              <label for="email">Your Email</label>
+            </div>
+            
+            <div class="form-group">
+              <select id="subject" required>
+                <option value="">Select Subject</option>
+                <option value="feedback">Feedback</option>
+                <option value="complaint">Complaint</option>
+                <option value="suggestion">Suggestion</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <textarea id="message" rows="5" required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4><i class="fas fa-utensils"></i> College Canteen</h4>
+        <p>Serving delicious meals with love and care since 2015</p>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 College Canteen | Managed by Bibek Kumar Sah | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
